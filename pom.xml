@@ -15,6 +15,7 @@
   </properties>
   <modules>
     <module>appengine-modules-ear</module>
+    <module>appengine-modules-shared-jar</module>
     <module>appengine-modules-web-1</module>
     <module>appengine-modules-web-2</module>
   </modules>

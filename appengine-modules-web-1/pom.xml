@@ -14,8 +14,6 @@
 
   <name>appengine-modules-web-1</name>
 
-
-
   <dependencies>
     <!-- Compile/runtime dependencies -->
     <dependency>
@@ -33,6 +31,11 @@
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.appengine.sample</groupId>
+      <artifactId>appengine-modules-shared-jar</artifactId>
+      <version>1.0</version>
     </dependency>
 
     <!-- Test Dependencies -->

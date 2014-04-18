@@ -27,6 +27,11 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
+	<dependency>
+            <groupId>com.google.appengine.sample</groupId>
+            <artifactId>appengine-modules-shared-jar</artifactId>
+            <version>1.0</version>
+        </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
