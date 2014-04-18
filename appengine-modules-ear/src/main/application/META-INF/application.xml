@@ -4,14 +4,14 @@
   <display-name>appengine-modules-ear</display-name>
   <module>
     <web>
-      <web-uri>appengine-modules-guestbook-1.0</web-uri>
-      <context-root>appengine-modules-guestbook</context-root>
+      <web-uri>appengine-modules-web-1-1.0</web-uri>
+      <context-root>appengine-modules-web-1</context-root>
     </web>
   </module>
   <module>
     <web>
-      <web-uri>appengine-modules-shardedcounter-1.0</web-uri>
-      <context-root>appengine-modules-shardedcounter</context-root>
+      <web-uri>appengine-modules-web-2-1.0</web-uri>
+      <context-root>appengine-modules-web-2</context-root>
     </web>
   </module>
   <library-directory>lib</library-directory>

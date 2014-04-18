@@ -7,14 +7,14 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.google.appengine:gradle-appengine-plugin:1.8.6'
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.3'
     }
 }
 
 dependencies {
-    appengineSdk 'com.google.appengine:appengine-java-sdk:1.8.6'
-    deploy project(path: ':appengine-modules-guestbook', configuration: 'archives')
-    deploy project(path: ':appengine-modules-shardedcounter', configuration: 'archives')
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.3'
+    deploy project(path: ':appengine-modules-web-1', configuration: 'archives')
+    deploy project(path: ':appengine-modules-web-2', configuration: 'archives')
 }
 
 appengine {

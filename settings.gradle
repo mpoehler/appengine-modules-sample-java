@@ -1,1 +1,1 @@
-include 'appengine-modules-guestbook', 'appengine-modules-shardedcounter', 'appengine-modules-ear'
+include 'appengine-modules-web-1', 'appengine-modules-web-2', 'appengine-modules-ear'
