@@ -9,6 +9,8 @@
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
 <%@ page import="com.google.appengine.api.users.UserServiceFactory" %>
+<%@ page import="com.google.appengine.api.modules.ModulesService" %>
+<%@ page import="com.google.appengine.api.modules.ModulesServiceFactory" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
@@ -88,6 +90,14 @@
     <div><input type="text" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/></div>
     <div><input type="submit" value="Switch Guestbook"/></div>
 </form>
+
+<%
+	ModulesService modulesService = ModulesServiceFactory.getModulesService();
+	String currentVersion = modulesService.getCurrentVersion();
+	String linkToOtherModule = modulesService.getVersionHostname("shardedcounter", currentVersion);
+%>
+
+	<a href="http://<%=linkToOtherModule %>">Link to other Module</a>
 
 </body>
 </html>
