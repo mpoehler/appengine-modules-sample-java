@@ -1,7 +1,8 @@
 appengine-modules-sample-java
 
+It has 2 web apps each deployed to a different module: appengine-modules-web-1 and appengine-modules-web-2
 
-It has 2 web apps each deployed to a different module: guestbook and shardedcounter.
+It has 1 jar module for code used by both webapps: appengine-modules-shared-jar
 
 Usage (After changing the app id in the appengine-modules-ear/src/main/application/META-INF/appengine-application.xml):
 
